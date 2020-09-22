@@ -18,7 +18,7 @@ end
 
 def long_planeteer_calls(array)
   array.each do |words|
-    if words.length >= 4
+    if words.length > 4
       return true
     end
   end
@@ -34,7 +34,6 @@ def find_the_cheese(array)
   array.each do |string|
     if string == cheese
       return cheese
-      
     end
   end
   return nil
